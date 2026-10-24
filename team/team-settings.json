@@ -1,0 +1,279 @@
+{
+  "ai": {
+    "cleanup": {
+      "codexModel": "",
+      "effort": "low",
+      "engine": "local",
+      "model": "sonnet"
+    },
+    "meetings": {
+      "codexModel": "",
+      "effort": "medium",
+      "engine": "claude",
+      "model": "opus"
+    },
+    "transforms": {
+      "codexModel": "",
+      "effort": "medium",
+      "engine": "claude",
+      "model": "sonnet"
+    }
+  },
+  "asr": {
+    "dictationEngine": "whisper",
+    "language": "auto",
+    "longDictationModel": "openai_whisper-large-v3-v20240930",
+    "longDictationSeconds": 6,
+    "meetingModel": "openai_whisper-large-v3-v20240930",
+    "model": "openai_whisper-large-v3-v20240930_turbo_632MB",
+    "polishMeetingTranscript": true
+  },
+  "assistant": {
+    "agentEngine": "claude",
+    "agentTools": [
+      "mcp__polarion-api",
+      "mcp__claude_ai_Microsoft_365",
+      "mcp__awork__awork_query",
+      "mcp__awork__find_capability",
+      "mcp__awork__find_guidance",
+      "mcp__awork__continue_reading",
+      "mcp__servicedesk"
+    ],
+    "defaultActivity": "Implementierung",
+    "planner": {
+      "codexModel": "",
+      "effort": "low",
+      "engine": "claude",
+      "model": "sonnet"
+    }
+  },
+  "codeModeEnabled": true,
+  "dictionaryGroups": [
+    "Kollegen",
+    "Kunden & Firmen",
+    "Produkte & Polarion",
+    "Tools"
+  ],
+  "languages": [
+    "de",
+    "en"
+  ],
+  "llm": {
+    "baseURL": "http://localhost:1234",
+    "enabled": true,
+    "model": "qwen/qwen3-4b-2507",
+    "provider": "lmstudio",
+    "temperature": 0.1,
+    "timeoutSeconds": 3
+  },
+  "places": [
+    {
+      "aliases": [
+        "polarion server"
+      ],
+      "name": "Polarion",
+      "url": "https://polarion.example.com/polarion"
+    },
+    {
+      "aliases": [
+        "stage"
+      ],
+      "name": "Staging",
+      "url": "https://staging.example.com/polarion"
+    },
+    {
+      "aliases": [
+        "service desk",
+        "tickets"
+      ],
+      "name": "Servicedesk",
+      "url": "https://servicedesk.example.com"
+    },
+    {
+      "aliases": [
+        "a work"
+      ],
+      "name": "awork",
+      "url": "https://app.awork.com"
+    }
+  ],
+  "replacements": [
+    {
+      "from": "TLD file",
+      "to": "tl;dv"
+    },
+    {
+      "from": "TLDV",
+      "to": "tl;dv"
+    },
+    {
+      "from": "Fabricam",
+      "to": "Fabrikam"
+    },
+    {
+      "from": "Litwear",
+      "to": "Litware"
+    },
+    {
+      "from": "Nova Clinical",
+      "to": "novaClinical"
+    },
+    {
+      "from": "Nowaclinical",
+      "to": "novaClinical"
+    },
+    {
+      "from": "Risk Sweet",
+      "to": "Risk Suite"
+    },
+    {
+      "from": "Granula",
+      "to": "Granola"
+    },
+    {
+      "from": "Whisperflow",
+      "to": "Wispr Flow"
+    },
+    {
+      "from": "IEC 623.04",
+      "to": "IEC 62304"
+    },
+    {
+      "from": "Livedock",
+      "to": "LiveDoc"
+    },
+    {
+      "from": "WorkyThemes",
+      "to": "Work Items"
+    },
+    {
+      "from": "Cloud Code",
+      "to": "Claude Code"
+    }
+  ],
+  "starredWords": [
+    "Northwind",
+    "Fabrikam",
+    "Litware",
+    "Risk Suite"
+  ],
+  "styleGroups": {
+    "code": [
+      "Tools",
+      "Produkte & Polarion"
+    ],
+    "mail": [
+      "Kunden & Firmen",
+      "Kollegen"
+    ],
+    "notes": [
+      "Produkte & Polarion",
+      "Kunden & Firmen"
+    ],
+    "work": [
+      "Kollegen",
+      "Kunden & Firmen"
+    ]
+  },
+  "transforms": [
+    {
+      "id": "6A1F0C3E-0000-4000-8000-000000000001",
+      "instruction": "Rewrite the text so it sounds clearer, in the speaker's own voice: reword for clarity, make it more concise, reorder for readability and add structure where it helps. Keep the tone and the language.",
+      "name": "Polish",
+      "summary": "Improve clarity and conciseness"
+    },
+    {
+      "id": "6A1F0C3E-0000-4000-8000-000000000002",
+      "instruction": "Turn these spoken, unstructured thoughts into a clean, optimized prompt for an AI assistant. Use short labelled parts where useful: Role, Task, Key points, Constraints, Output format. Keep every requirement the speaker mentioned and add nothing new. Keep the language.",
+      "name": "Prompt Engineer",
+      "summary": "Constructs optimal prompts"
+    },
+    {
+      "id": "6A1F0C3E-0000-4000-8000-000000000003",
+      "instruction": "Rewrite in a formal, professional tone. Keep the language.",
+      "name": "Formal",
+      "summary": "Professional, polite tone"
+    },
+    {
+      "id": "6A1F0C3E-0000-4000-8000-000000000004",
+      "instruction": "Make it about half as long. Keep every fact and the language.",
+      "name": "Shorter",
+      "summary": "Half as long, every fact kept"
+    },
+    {
+      "id": "6A1F0C3E-0000-4000-8000-000000000005",
+      "instruction": "Turn it into a short intro line and a list of bullet points starting with \"- \". Keep the language.",
+      "name": "Bullet points",
+      "summary": "Intro line and a list"
+    },
+    {
+      "id": "6A1F0C3E-0000-4000-8000-000000000006",
+      "instruction": "Turn it into a short email with greeting, body and sign-off. Keep the language.",
+      "name": "Email",
+      "summary": "Greeting, body and sign-off"
+    },
+    {
+      "id": "6A1F0C3E-0000-4000-8000-000000000007",
+      "instruction": "Translate into English. Return only the translation, never the original text as well. Keep the formatting exactly as in the original: line breaks, empty lines, paragraphs, lists and their markers, headings, Markdown, emoji and links.",
+      "name": "English",
+      "summary": "Translate into English"
+    },
+    {
+      "id": "6A1F0C3E-0000-4000-8000-000000000008",
+      "instruction": "Translate into German. Return only the translation, never the original text as well. Keep the formatting exactly as in the original: line breaks, empty lines, paragraphs, lists and their markers, headings, Markdown, emoji and links.",
+      "name": "German",
+      "summary": "Translate into German"
+    },
+    {
+      "id": "6A1F0C3E-0000-4000-8000-000000000009",
+      "instruction": "Correct only spelling, grammar, punctuation and capitalisation. Keep every word that is not wrong, the word order, the tone and the formatting exactly as they are; do not reword, shorten or restructure. If nothing is wrong, return the text unchanged. Keep the language.",
+      "name": "Correct",
+      "summary": "Fix spelling and grammar only"
+    }
+  ],
+  "transformsEnabled": true,
+  "vocabulary": [
+    "awork",
+    "Polarion",
+    "LiveDoc",
+    "Work Item",
+    "Velocity",
+    "Table Framework",
+    "Risk Suite",
+    "Clinical Suite",
+    "novaClinical",
+    "Northwind",
+    "Fabrikam",
+    "Litware",
+    "Tailspin",
+    "Mia Keller",
+    "Paul Braun",
+    "Lea Fischer",
+    "Sara Wolf",
+    "Tim Hoffmann",
+    "tl;dv",
+    "Claude Code"
+  ],
+  "wordGroups": {
+    "Claude Code": "Tools",
+    "Clinical Suite": "Produkte & Polarion",
+    "Fabrikam": "Kunden & Firmen",
+    "Lea Fischer": "Kollegen",
+    "Litware": "Kunden & Firmen",
+    "LiveDoc": "Produkte & Polarion",
+    "Mia Keller": "Kollegen",
+    "Northwind": "Kunden & Firmen",
+    "Paul Braun": "Kollegen",
+    "Polarion": "Produkte & Polarion",
+    "Risk Suite": "Produkte & Polarion",
+    "Sara Wolf": "Kollegen",
+    "Table Framework": "Produkte & Polarion",
+    "Tailspin": "Kunden & Firmen",
+    "Tim Hoffmann": "Kollegen",
+    "Velocity": "Produkte & Polarion",
+    "Work Item": "Produkte & Polarion",
+    "awork": "Tools",
+    "novaClinical": "Produkte & Polarion",
+    "tl;dv": "Tools"
+  }
+}

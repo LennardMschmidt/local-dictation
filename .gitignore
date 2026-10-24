@@ -1,0 +1,15 @@
+.build/
+.swiftpm/
+/build/
+*.xcodeproj
+.DS_Store
+/e2e-out/
+.env
+.env.*
+*.wav
+*.m4a
+*.p12
+*.pem
+*.keychain-db
+node_modules/
+dist/
